@@ -5,7 +5,7 @@ function stringChop(str, size) {
 	if(str===null) return ar
 	else if(str.length<size) return ar.push(str);
 	while(s<str.length){
-		ar.push(str.subString(s,s+size))
+		ar.push(str.slice(s,s+size))
 		s+=size
 	}
 	return ar
